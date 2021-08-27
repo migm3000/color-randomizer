@@ -3,8 +3,8 @@ import './App.css';
 
 function App() {
 
-  const [color, setColor] = useState("#F397D6");
-
+  const [color, setColor] = useState(localStorage.getItem("color"));
+const [color, setColor]= useState(getColor ? getColor: "orange");
   const COLOR = [
     "#B8B8F3",
     "#D7B8F3",
